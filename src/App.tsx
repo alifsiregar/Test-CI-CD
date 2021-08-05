@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        Ini Test CI/CD :)
+        Test CI/CD Done!
       </h1>
     </div>
   );
