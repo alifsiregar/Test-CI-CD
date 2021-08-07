@@ -17,8 +17,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install and Build
-        run: npm install && npm run build
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Lint Project
+        run: npx eslint src/*
+
+      - name: Build Project
+        run: npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
