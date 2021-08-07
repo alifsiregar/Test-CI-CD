@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function App(): JSX.Element {
+function App() {
   return (
     <div className="App">
       <h1>
